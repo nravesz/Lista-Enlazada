@@ -20,6 +20,7 @@ void imprimir_iter_externo(lista_t *lista)
     lista_iter_destruir(iter);
 }
 
+/*Multiplica por dos los elementos que se encuentran en las posiciones pares*/
 bool multiplicar_por_2(void* dato, void* extra){
 	if (*(size_t*)extra%2 == 0){
 		*(int*)dato = *(int*)dato*2;
